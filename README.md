@@ -23,7 +23,6 @@ HTML, CSS, SASS, SVG, Figma, Git. (Emmet and Browsersync were used to speed up d
 
 
 
-
 # Welbex
 
 ## Описание:
