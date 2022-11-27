@@ -1,0 +1,420 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 320px;
+  background-color: #0E1014;
+  position: relative;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+#header {
+  padding-top: 46px;
+}
+#header .all_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#header .all_header .logo {
+  display: block;
+  max-width: 140px;
+  padding-top: 11px;
+}
+#header .all_header .logo > img {
+  width: 140px;
+  height: 24px;
+}
+#header .all_header .logo p {
+  font-weight: 300;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  margin: 7px 0 3px;
+  color: #E4E5EA;
+}
+#header .all_header .center_header {
+  z-index: 50;
+  position: relative;
+  display: flex;
+  margin-right: 85px;
+}
+#header .all_header .center_header .menu_top {
+  list-style-type: none;
+}
+#header .all_header .center_header .menu_top > li {
+  display: inline-block;
+  margin: 15px 30px 39px 0;
+}
+#header .all_header .center_header .menu_top > li > a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #E4E5EA;
+  transition: color 0.4s ease;
+}
+#header .all_header .center_header .menu_top > li > a:hover {
+  color: #FC6E33;
+  text-shadow: 0 0 5px #ff0000;
+}
+#header .all_header .center_header .menu_top > li:last-child {
+  margin-right: 0;
+}
+#header .all_header .right_header {
+  display: flex;
+  z-index: 50;
+}
+#header .all_header .right_header .phone_header {
+  margin: 15px 47px 38px 0;
+}
+#header .all_header .right_header .phone_header > a {
+  color: #E4E5EA;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+#header .all_header .right_header .phone_header > a:hover {
+  color: #FC6E33;
+  text-shadow: 0 0 5px #ff0000;
+}
+#header .all_header .right_header .social_networks {
+  list-style-type: none;
+}
+#header .all_header .right_header .social_networks > li {
+  display: inline-block;
+  margin: 14px 30px 39px 0;
+}
+#header .all_header .right_header .social_networks > li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+}
+#header .all_header .right_header .social_networks > li a:hover {
+  box-shadow: 0 0 5px #ff0000;
+}
+#header .all_header .right_header .social_networks > li:last-child {
+  margin-right: 0;
+}
+
+#content {
+  margin-top: 90px;
+}
+#content .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#content .content .left_content h1 {
+  font-family: "Inter", sans-serif;
+  color: #E4E5EA;
+  font-weight: 400;
+  font-size: 48px;
+  max-width: 362px;
+}
+#content .content .left_content .gradi {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  max-width: 247px;
+  background: linear-gradient(92deg, #FCB045 -2.95%, #FF3F78 121.36%, #FF5071 121.36%), #E4E5EA;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+#content .content .left_content .contr {
+  margin-top: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #E4E5EA;
+  max-width: 275px;
+  line-height: 1.4;
+}
+#content .content .right_content h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #E4E5EA;
+  max-width: 291px;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  margin: 15px 0 10px;
+}
+#content .content .right_content .gradi_2 {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(90deg, #FC893A 0%, #FD1D1D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  position: relative;
+}
+#content .content .right_content .gradi_3 {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(90deg, #FCB045 0%, #FC6E33 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  position: relative;
+}
+#content .content .right_content .presents_all {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  gap: 30px;
+  justify-content: flex-end;
+}
+#content .content .right_content .presents_all .presents h3 {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #E4E5EA;
+  text-align: right;
+}
+#content .content .right_content .presents_all .presents p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+  color: #E4E5EA;
+  width: 140px;
+  padding-top: 6px;
+}
+#content .content .right_content .presents_all .presents .mob_presents {
+  display: none;
+}
+#content .content .right_content .consult {
+  margin-top: 61px;
+  text-align: right;
+  z-index: 50;
+}
+#content .content .right_content .btn {
+  z-index: 500;
+  display: block;
+  background-color: #4077F3;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #E4E5EA;
+  padding: 21px 34px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  text-align: center;
+}
+#content .content .right_content .btn:hover {
+  background-color: #E4E5EA;
+  color: #4077F3;
+}
+
+#footer_blocks {
+  margin-top: 124px;
+}
+#footer_blocks .footer_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#footer_blocks .footer_info .heading_footer {
+  color: #656566;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+#footer_blocks .footer_info .about, #footer_blocks .footer_info .menu_items1, #footer_blocks .footer_info .menu_items2, #footer_blocks .footer_info .menu_items2_mob {
+  z-index: 50;
+}
+#footer_blocks .footer_info .about > ul, #footer_blocks .footer_info .menu_items1 > ul, #footer_blocks .footer_info .menu_items2 > ul, #footer_blocks .footer_info .menu_items2_mob > ul {
+  list-style-type: none;
+}
+#footer_blocks .footer_info .about > ul > li, #footer_blocks .footer_info .menu_items1 > ul > li, #footer_blocks .footer_info .menu_items2 > ul > li, #footer_blocks .footer_info .menu_items2_mob > ul > li {
+  display: block;
+  padding-bottom: 10px;
+}
+#footer_blocks .footer_info .about > ul > li a, #footer_blocks .footer_info .menu_items1 > ul > li a, #footer_blocks .footer_info .menu_items2 > ul > li a, #footer_blocks .footer_info .menu_items2_mob > ul > li a {
+  display: block;
+  text-decoration: none;
+  color: #E4E5EA;
+  transition: transform 0.4s ease;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Inter", sans-serif;
+}
+#footer_blocks .footer_info .about > ul > li a:hover, #footer_blocks .footer_info .menu_items1 > ul > li a:hover, #footer_blocks .footer_info .menu_items2 > ul > li a:hover, #footer_blocks .footer_info .menu_items2_mob > ul > li a:hover {
+  color: #FC6E33;
+  text-shadow: 0 0 5px #ff0000;
+}
+#footer_blocks .footer_info .about > ul > li:last-child, #footer_blocks .footer_info .menu_items1 > ul > li:last-child, #footer_blocks .footer_info .menu_items2 > ul > li:last-child, #footer_blocks .footer_info .menu_items2_mob > ul > li:last-child {
+  padding-bottom: 0;
+}
+#footer_blocks .footer_info .menu_items2_mob {
+  display: none;
+}
+#footer_blocks .about {
+  text-align: left;
+}
+#footer_blocks .menu {
+  margin-right: 65px;
+}
+#footer_blocks .menu .all_items_menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px;
+}
+#footer_blocks .contacts {
+  display: block;
+  text-align: right;
+}
+#footer_blocks .contacts .phone_footer > a {
+  color: #E4E5EA;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+#footer_blocks .contacts .phone_footer > a:hover {
+  color: #FC6E33;
+  text-shadow: 0 0 5px #ff0000;
+}
+#footer_blocks .contacts .social_networks_footer {
+  list-style-type: none;
+}
+#footer_blocks .contacts .social_networks_footer > li {
+  display: inline-block;
+  margin: 20px 10px 20px 0;
+}
+#footer_blocks .contacts .social_networks_footer > li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+}
+#footer_blocks .contacts .social_networks_footer > li a:hover {
+  box-shadow: 0 0 5px #ff0000;
+}
+#footer_blocks .contacts .social_networks_footer > li:last-child {
+  margin-right: 0;
+}
+#footer_blocks .contacts p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #E4E5EA;
+}
+#footer_blocks .welbex_policy {
+  margin: 33px 150px 0;
+  padding-bottom: 20px;
+  text-align: right;
+}
+#footer_blocks .welbex_policy p, #footer_blocks .welbex_policy a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E4E5EA;
+}
+#footer_blocks .welbex_policy a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.ball_1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 868px;
+  top: -2px;
+  /* Свойства теней и фильтров для шаров ball_1,ball_3,ball_5 я убрал, чтобы результат был максимально приближен к макету т.к. radial-gradient выдаёт очень некорректный результат */
+  /* background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) */ 
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  /* box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25) */
+  /* filter: blur(5px)   */
+  /* -webkit-backdrop-filter: blur(2px) */
+  /* backdrop-filter: blur(2px)  */
+  /* Note: backdrop-filter has minimal browser support */	
+}
+
+.ball_2 {
+  position: fixed;
+  width: 259px;
+  height: 259px;
+  left: 602px;
+  top: -154px;
+  background: #833AB4;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: 1;
+}
+
+.ball_3 {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 519px;
+  top: 83px;
+  /* Свойства теней и фильтров для шаров ball_1,ball_3,ball_5 я убрал, чтобы результат был максимально приближен к макету т.к. radial-gradient выдаёт очень некорректный результат */
+  /* background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%)  */
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected  */
+  /* box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25)   */
+  /* -webkit-backdrop-filter: blur(2px) */
+  /* backdrop-filter: blur(2px) */
+  /*Note: backdrop-filter has minimal browser support */
+}
+
+.ball_4 {
+  position: fixed;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+  background: #961A1A;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: 1;
+}
+
+.ball_5 {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 851px;
+  top: 547px;
+  /* Свойства теней и фильтров для шаров ball_1,ball_3,ball_5 я убрал, чтобы результат был максимально приближен к макету т.к. radial-gradient выдаёт очень некорректный результат */
+  /* background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%)  */
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  /* box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25)   */
+  /* filter: blur(2.5px) */
+  /* -webkit-backdrop-filter: blur(2px) */
+  /* backdrop-filter: blur(2px) */
+  /* Note: backdrop-filter has minimal browser support */
+}
